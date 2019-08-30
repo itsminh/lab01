@@ -1,0 +1,105 @@
+Last login: Fri Aug 30 08:21:08 on ttys000
+annas-MacBook-Air:~ minh$ git config
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --default <value>     with --get, use default value when missing entry
+
+annas-MacBook-Air:~ minh$ git config --global user.name "Anna"
+annas-MacBook-Air:~ minh$ git config user.email "annatran@buffalo.edu"
+fatal: not in a git directory
+annas-MacBook-Air:~ minh$ git config --global user.name Anna
+annas-MacBook-Air:~ minh$ git config --global user.email annatran@buffalo.edu
+annas-MacBook-Air:~ minh$ git add userinfo.txt.rtf
+fatal: not a git repository (or any of the parent directories): .git
+annas-MacBook-Air:~ minh$ git clone https://github.com/itsminh/lab01.git
+Cloning into 'lab01'...
+warning: You appear to have cloned an empty repository.
+annas-MacBook-Air:~ minh$ git add userinfo.txt.rtf
+fatal: not a git repository (or any of the parent directories): .git
+annas-MacBook-Air:~ minh$ clear
+
+annas-MacBook-Air:~ minh$ git clone https://github.com/itsminh/lab01.git
+fatal: destination path 'lab01' already exists and is not an empty directory.
+annas-MacBook-Air:~ minh$ ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures	lab01
+annas-MacBook-Air:~ minh$ ls lab01
+annas-MacBook-Air:~ minh$ gitadd userinfo.txt.rtf
+-bash: gitadd: command not found
+annas-MacBook-Air:~ minh$ git add userinfo.txt.rtf
+fatal: not a git repository (or any of the parent directories): .git
+annas-MacBook-Air:~ minh$ emacs userinfo.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+annatran
+itsminh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-uuu:**-F1  userinfo.txt   All L2     (Text)------------------------------------
+
